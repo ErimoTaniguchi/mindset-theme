@@ -25,7 +25,47 @@ Update URO: false
     margin-bottom: 0;
 }
 
+
+/* Scroll to top */
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+svg path {
+	fill: currentColor;
+}
+
+.scroll-top {
+	background: transparent;
+	border: none;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	transition: all ease 0.3s;
+	opacity: 0;
+	color: #fff200;
+}
+
+/* Clearfix hack */
+article.wp-block-group::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* Sidebar */
+.sidebar-layout > *:first-child {
+    flex: 1 1 30rem;
+    /* このブロックの基本の横幅は 30rem（約480px）くらいにしておいて、画面が狭くなったら縮むし、広くなったらいい感じに伸び縮みさせてね！ */
+}
 .site-sidebar .wp-block-heading {
     font-size: var(--wp--preset--font-size--large);
     margin-top: 2rem;
