@@ -9,7 +9,17 @@
   "description": "Display a copyright date.",
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "textAlign": true
+    }
   },
   "attributes": {
     "startingYear": {

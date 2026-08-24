@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "mindset-blocks/copyright-date",
+	"name": "mindset-blocks/company-email",
 	"version": "0.1.0",
-	"title": "Copyright Date",
+	"title": "Company  Email",
 	"category": "text",
-	"icon": "calendar",
-	"description": "Display a copyright date.",
+	"icon": "email",
+	"description": "Display the company email.",
 	"example": {},
 	"supports": {
 		"html": false,
@@ -22,13 +22,14 @@
 		}
 	},
 	"attributes": {
-		"startingYear": {
-		"type": "number",
-		"default": 2020
+		"svgIcon": {
+			"type": "boolean",
+			"default": false
 		}
 	},
-	"textdomain": "copyright-date",
+	"textdomain": "company-email",
 	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
 	"render": "file:./render.php"
 }

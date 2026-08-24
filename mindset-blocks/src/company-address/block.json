@@ -9,7 +9,17 @@
 	"description": "Output the company address with an optional icon.",
 	"example": {},
 	"supports": {
-		"html": false
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true
+		}
 	},
 	"attributes": {
 		"svgIcon": {

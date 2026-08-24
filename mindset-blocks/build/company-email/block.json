@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "mindset-blocks/company-address",
-  "version": "1.0.0",
-  "title": "Company Address",
+  "name": "mindset-blocks/company-email",
+  "version": "0.1.0",
+  "title": "Company  Email",
   "category": "text",
-  "icon": "location",
-  "description": "Output the company address with an optional icon.",
+  "icon": "email",
+  "description": "Display the company email.",
   "example": {},
   "supports": {
     "html": false,
@@ -27,8 +27,9 @@
       "default": false
     }
   },
-  "textdomain": "company-address",
+  "textdomain": "company-email",
   "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
   "render": "file:./render.php"
 }
