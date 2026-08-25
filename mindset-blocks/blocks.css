@@ -1,0 +1,16 @@
+/* ナビゲーション全体の外枠と背景、余白の設定 */
+.wp-block-mindset-blocks-services .services-nav {
+    display: flex;                /* 横並びにする */
+    justify-content: space-around;/* 項目同士の間隔を均等に空ける */
+    align-items: center;          /* 縦方向の位置を中央に揃える */
+    border: 1px solid yellow;    /* 外枠のボーダー */
+    padding: 20px;                /* 内側の余白 */
+    border-radius: 4px;           /* 角を少し丸くする（お好みで） */
+    margin-bottom: 40px;          /* 下の記事一覧との距離を空ける */
+}
+
+/* ナビゲーション内の各リンク（<a>タグ）のスタイル */
+.wp-block-mindset-blocks-services .services-nav a {
+    text-align: center;           /* 文字を中央揃え（2行になったとき用） */
+    padding: 10px;
+}
